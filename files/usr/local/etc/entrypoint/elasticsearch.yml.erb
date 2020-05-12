@@ -16,7 +16,7 @@
 
 cluster.name: <%= values.fetch('cluster_name') %>
 
-node.name: <%= values.fetch('node_name') %>
+node.name: <%= values.fetch('node_name') %>.<%= values.fetch('domain_name') %>
 
 path.data: /var/lib/elasticsearch/data
 path.logs: /var/lib/elasticsearch/logs
