@@ -19,10 +19,13 @@ LABEL maintainer=engineering@deciphernow.com
 ARG VERSION
 
 ENV CLUSTER_NAME local
+ENV DOMAIN_NAME localhost
 ENV NODE_NAME localhost
-ENV NODE_NAMES localhost
+ENV NODE_NAMES localhost.localhost
 
 ENV ES_PATH_CONF /opt/elastic/elasticsearch/config
+
+RUN yum update -y
 
 RUN yum install -y \
   ruby

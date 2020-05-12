@@ -17,7 +17,7 @@ version: 2
 jobs:
   build:
     docker:
-      - image: alpine:3.9
+      - image: alpine:3.11
     steps:
       - run: apk add --no-cache docker git make
       - checkout

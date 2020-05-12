@@ -32,6 +32,7 @@ context = Context.new({
     'cluster_name' => ENV['CLUSTER_NAME'],
     'node_name'    => ENV['NODE_NAME'],
     'node_names'   => ENV['NODE_NAMES'],
+    'domain_name'  => ENV['DOMAIN_NAME'],
 })
 
 templates.each { |template, destination| context.render(template, destination) }

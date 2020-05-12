@@ -6,11 +6,12 @@ This repository contains the resources for building the deciphernow/elasticsearc
 
 This image is configured to run in a single instance deployment out of the box.  You may further tailor the runtime with the following environment variables:
 
-| Variable     | Example        | Default   | Description                                                   |
-|--------------|----------------|-----------|---------------------------------------------------------------|
-| CLUSTER_NAME | production     | local     | The name of the ElasticSearch cluster.                        |
-| NODE_NAME    | es01           | localhost | The hostname or address of the server.                        |
-| NODE_NAMES   | es01,es02,es03 | localhost | The hostnames or add addresses of all servers in the cluster. |
+| Variable     | Example                                        | Default             | Description                                                         |
+| ------------ | ---------------------------------------------- | ------------------- | ------------------------------------------------------------------- |
+| CLUSTER_NAME | production                                     | local               | The name of the ElasticSearch cluster.                              |
+| NODE_NAME    | es01                                           | localhost           | The hostname or address of the server.                              |
+| NODE_NAMES   | es01.example.com,es02.example.com,es03.example | localhost.localhost | The hostnames or add addresses of all servers in the cluster.       |
+| DOMAIN_NAME  | example.com                                    | localhost           | The domain name that the nodes are registered to (required for v7+) |
 
 ## Development
 
